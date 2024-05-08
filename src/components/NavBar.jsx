@@ -66,8 +66,10 @@ function NavBar() {
           </div>
 
           {SidebarData.map((item, index) => {
-            return <SubMenu item={item} key={index} />;
+            return <SubMenu item={item} key={index} />
           })}
+
+          
           <div>
             <div className="flex justify-center mt-11 border outline-none w-[89%] mx-auto">
               <input

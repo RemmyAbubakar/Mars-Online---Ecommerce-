@@ -4,7 +4,7 @@ import Fade from "react-reveal/Fade";
 function AboutMars() {
   return (
     <div>
-      <div className="flex flex-col items-center md:flex-row h-screen p-14 mt-6">
+      <div className="flex flex-col items-center md:flex-row px-3 py-3">
         <div className="flex justify-center items-center">
           <Fade left>
             <div className="p-14">
