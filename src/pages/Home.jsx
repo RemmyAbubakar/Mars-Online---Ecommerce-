@@ -1,13 +1,11 @@
-import React from 'react';
-import ImageSlider from '../components/ImageSlider';
-import {SliderData} from '../components/SliderData';
-import HeadForProducts from '../components/HeadForProducts';
-import ViewAllButton from '../components/ViewAllButton';
-import AboutMars from '../components/AboutMars';
-import Categories from '../components/Categories';
-import Cards from '../components/Cards'
-
-
+import React from "react";
+import ImageSlider from "../components/ImageSlider";
+import { SliderData } from "../components/SliderData";
+import HeadForProducts from "../components/HeadForProducts";
+import ViewAllButton from "../components/ViewAllButton";
+import Categories from "../components/Categories";
+import Cards from "../components/Cards";
+import HomeVideo from "../components/HomeVideo";
 
 function Home() {
   return (
@@ -15,11 +13,11 @@ function Home() {
       <ImageSlider slides={SliderData} />
       <HeadForProducts />
       <Cards />
-      <AboutMars />
+      <HomeVideo />
       <Categories />
       <ViewAllButton />
     </div>
   );
 }
 
-export default Home
+export default Home;
