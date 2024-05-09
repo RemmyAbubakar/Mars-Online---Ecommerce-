@@ -5,6 +5,7 @@ import ViewAllButton from "../components/ViewAllButton";
 import Categories from "../components/Categories";
 import Cards from "../components/Cards";
 import HomeVideo from "../components/HomeVideo";
+import Fade from "react-reveal/Fade";
 
 function Home() {
   return (
@@ -12,7 +13,9 @@ function Home() {
       <ImageSlider />
       <HeadForProducts />
       <Cards />
-      <HomeVideo />
+      <Fade left>
+        <HomeVideo />
+      </Fade>
       <Categories />
       <ViewAllButton />
     </div>

@@ -11,6 +11,7 @@ import { AiOutlineInstagram } from "react-icons/ai";
 import { TbBrandTiktok } from "react-icons/tb";
 import { FaWhatsapp } from "react-icons/fa";
 import SubMenu from "./SubMenu";
+import Fade from "react-reveal/Fade";
 
 function NavBar() {
   const [Sidebar, setSidebar] = useState(false);
@@ -28,9 +29,15 @@ function NavBar() {
           </div>
 
           <div className="">
-            <Link to="/">
-              <img src="./images/marssss.png" alt="" className="ml-6" />
-            </Link>
+            <Fade bottom>
+              <Link to="/">
+                <img
+                  src="./images/marsss transparent.png"
+                  alt=""
+                  className="ml-6 h-12 w-32 py-1"
+                />
+              </Link>
+            </Fade>
           </div>
           <div className="">
             <ul className="flex gap-3">
@@ -49,7 +56,9 @@ function NavBar() {
           </div>
         </div>
         <div className="bg-[black] text-white h-8 text-[12px] flex justify-center items-center font-second">
-          <h3>30% OFF ALL ORDERS !!</h3>
+          <Fade left>
+            <h3>30% OFF ALL ORDERS !!</h3>
+          </Fade>
         </div>
       </nav>
 
