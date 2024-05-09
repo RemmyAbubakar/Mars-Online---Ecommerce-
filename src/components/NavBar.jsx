@@ -55,9 +55,25 @@ function NavBar() {
             </ul>
           </div>
         </div>
-        <div className="bg-[black] text-white h-8 text-[12px] flex justify-center items-center font-second">
+        <div className="bg-[black] text-white h-10 text-[12px] flex justify-between items-center font-second pl-7 tracking-wider cursor-pointer lg:flex md:flex sm:hidden">
+          <div className="flex ml-11 text-[14px]">
+            <div className="mr-4 lg:block md:block sm:hidden">
+              <h3>COLLECTIONS</h3>
+            </div>
+            <div className="mr-4 text-[14px] lg:block md:block sm:hidden">
+              <h3>THRIFT</h3>
+            </div>
+          </div>
+          <div>
+            <div className="mr-14 text-[13.5px] lg:block md:block sm:hidden">
+              <h3>BRANDS CURATED BY MARS</h3>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-[black] text-white h-8 text-[12px] flex justify-center items-center font-second lg:hidden md:hidden sm:flex sm:justify-center sm:items-center">
           <Fade left>
-            <h3>30% OFF ALL ORDERS !!</h3>
+            <h3>27 MINS AWAY TILL NEW THRIFT DROP !</h3>
           </Fade>
         </div>
       </nav>

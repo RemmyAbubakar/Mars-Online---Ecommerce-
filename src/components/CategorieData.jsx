@@ -2,16 +2,16 @@ export const categories = [
   {
     id: 1,
     img: "/images/boygirl1 (1).jpg",
-    title: "MEN",
+    title: "COLLECTIONs",
   },
   {
     id: 1,
     img: "/images/boygirl6 (1).jpg",
-    title: "WOMEN",
+    title: "THRIFT",
   },
   {
     id: 1,
     img: "/images/esther4 (1).jpg",
-    title: "ACCESSERIES",
+    title: "BRANDS CURATED BY MARS",
   },
 ];
