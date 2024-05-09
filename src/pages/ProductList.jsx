@@ -21,8 +21,8 @@ function ProductList() {
 
   return (
     <div>
-    <AllProductHeader />
-      <div className="flex flex-wrap gap-10 justify-center pt-10">
+      <AllProductHeader />
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4  justify-center pt-3 lg:px-24 md:px-16 sm:px-1">
         {data.map((data) => (
           <Products product={data} />
         ))}
