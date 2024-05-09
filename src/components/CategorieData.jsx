@@ -1,7 +1,7 @@
 export const categories = [
   {
     id: 1,
-    img: "/images/boygirl4 (1).jpg",
+    img: "/images/boygirl1 (1).jpg",
     title: "MEN",
   },
   {
@@ -11,7 +11,7 @@ export const categories = [
   },
   {
     id: 1,
-    img: "/images/boygirl3 (1).jpg",
+    img: "/images/esther4 (1).jpg",
     title: "ACCESSERIES",
   },
 ];

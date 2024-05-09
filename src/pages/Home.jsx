@@ -1,6 +1,5 @@
 import React from "react";
 import ImageSlider from "../components/ImageSlider";
-import { SliderData } from "../components/SliderData";
 import HeadForProducts from "../components/HeadForProducts";
 import ViewAllButton from "../components/ViewAllButton";
 import Categories from "../components/Categories";
@@ -10,7 +9,7 @@ import HomeVideo from "../components/HomeVideo";
 function Home() {
   return (
     <div>
-      <ImageSlider slides={SliderData} />
+      <ImageSlider />
       <HeadForProducts />
       <Cards />
       <HomeVideo />

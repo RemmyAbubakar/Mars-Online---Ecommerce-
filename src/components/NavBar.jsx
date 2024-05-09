@@ -20,22 +20,19 @@ function NavBar() {
   return (
     <div className="py-0 sticky top-0 z-50 bg-white">
       <nav>
-        <div className="bg-[black] text-white h-8 text-[12px] flex justify-center items-center font-second mb-4">
-          <h3>30% OFF ALL ORDERS !!</h3>
-        </div>
-        <div className="flex justify-between items-center">
-          <div className="mb-3 ml-6">
+        <div className="flex justify-between items-center py-2 px-4">
+          <div className="">
             <button>
               <BsList size={30} onClick={showSidebar} />
             </button>
           </div>
 
-          <div className="flex justify-end mb-5">
+          <div className="">
             <Link to="/">
               <img src="./images/marssss.png" alt="" className="ml-6" />
             </Link>
           </div>
-          <div className="flex justify-end mb-3 mr-6">
+          <div className="">
             <ul className="flex gap-3">
               <li>
                 <Link to="/search">
@@ -50,6 +47,9 @@ function NavBar() {
               </li>
             </ul>
           </div>
+        </div>
+        <div className="bg-[black] text-white h-8 text-[12px] flex justify-center items-center font-second">
+          <h3>30% OFF ALL ORDERS !!</h3>
         </div>
       </nav>
 
@@ -66,10 +66,9 @@ function NavBar() {
           </div>
 
           {SidebarData.map((item, index) => {
-            return <SubMenu item={item} key={index} />
+            return <SubMenu item={item} key={index} />;
           })}
 
-          
           <div>
             <div className="flex justify-center mt-11 border outline-none w-[89%] mx-auto">
               <input

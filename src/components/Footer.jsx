@@ -17,7 +17,7 @@ function Footer() {
             </h2>
             <ul className="text-gray-600 dark:text-gray-900">
               <li className="mb-4">
-                <Link to={"/contactus"}>Contact Us</Link>
+                <Link to={"/contacts"}>Contact Us</Link>
               </li>
               <li className="mb-4">Shipping</li>
               <li className="mb-4">FAQ</li>
