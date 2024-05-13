@@ -6,7 +6,7 @@ function ViewAllButton() {
     <div className="font-second text-md flex justify-center mt-4">
     <Link to={"/products"}>
       <button>
-        <h3>VIEW ALL</h3>
+        <h3>SHOP ALL</h3>
       </button>
       </Link>
     </div>

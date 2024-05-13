@@ -13,6 +13,11 @@ import ProductList from "./pages/ProductList";
 import ProductDetails from "./pages/ProductDetails";
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
+import Collections from "./pages/Collections";
+import Thrifts from "./pages/Thrifts";
+import MarsBrands from "./pages/MarsBrands";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   return (
@@ -30,6 +35,9 @@ function App() {
           <Route path="/contactus" element={<ContactUs />} />
           <Route path="/searchmodal" element={<SearchModal />} />
           <Route path="/products" element={<ProductList />} />
+          <Route path="/collections" element={<Collections />} />
+          <Route path="/thrifts" element={<Thrifts />} />
+          <Route path="/marsbrands" element={<MarsBrands />} />
           <Route path="/products/:productId" element={<ProductDetails />} />
         </Routes>
         <Footer />

@@ -1,9 +1,13 @@
-import React from 'react'
-import {BsPlus} from "react-icons/bs"
-import {BsX} from "react-icons/bs"
-import {Link} from "react-router-dom"
+import React from "react";
+import { BsPlus } from "react-icons/bs";
+import { BsX } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 export const SidebarData = [
+  {
+    title: <Link to="/">HOME</Link>,
+    path: "/",
+  },
   {
     title: "SHOP",
     path: "/shop",

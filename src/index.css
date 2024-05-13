@@ -10,3 +10,22 @@
        @apply  border-b-[3px] outline-none;
     }
 }
+
+.transition-transform {
+    transition-property: transform;
+}
+
+.react-slick {
+    width: 100%;
+    overflow: hidden;
+    /* Prevents the slider from overflowing its container */
+}
+
+.react-slick .slick-list {
+    overflow: visible !important;
+    /* Allows the slider content to overflow its container */
+}
+
+.react-slick .slick-slide img {
+    height: 100%;
+}

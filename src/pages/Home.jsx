@@ -10,13 +10,12 @@ import Fade from "react-reveal/Fade";
 function Home() {
   return (
     <div>
-      <ImageSlider />
+      <Categories />
       <HeadForProducts />
       <Cards />
       <Fade left>
         <HomeVideo />
       </Fade>
-      <Categories />
       <ViewAllButton />
     </div>
   );

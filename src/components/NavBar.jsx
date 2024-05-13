@@ -12,11 +12,13 @@ import { TbBrandTiktok } from "react-icons/tb";
 import { FaWhatsapp } from "react-icons/fa";
 import SubMenu from "./SubMenu";
 import Fade from "react-reveal/Fade";
+import { Spin as Hamburger } from "hamburger-react";
 
 function NavBar() {
   const [Sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!Sidebar);
+  const handleLinkClick = () => setSidebar(false); // Function to close sidebar when link is clicked
 
   return (
     <div className="py-0 sticky top-0 z-50 bg-white">
@@ -24,7 +26,12 @@ function NavBar() {
         <div className="flex justify-between items-center py-2 px-4">
           <div className="">
             <button>
-              <BsList size={30} onClick={showSidebar} />
+              <Hamburger
+                direction="right"
+                toggled={Sidebar}
+                toggle={showSidebar}
+                size={24}
+              />
             </button>
           </div>
 
@@ -57,16 +64,22 @@ function NavBar() {
         </div>
         <div className="bg-[black] text-white h-10 text-[12px] flex justify-between items-center font-second pl-7 tracking-wider cursor-pointer lg:flex md:flex sm:hidden">
           <div className="flex ml-11 text-[14px]">
-            <div className="mr-4 lg:block md:block sm:hidden">
-              <h3>COLLECTIONS</h3>
-            </div>
-            <div className="mr-4 text-[14px] lg:block md:block sm:hidden">
-              <h3>THRIFT</h3>
-            </div>
+            <Link to="/collections">
+              <div className="mr-4 lg:block md:block sm:hidden">
+                <h3>COLLECTIONS</h3>
+              </div>
+            </Link>
+            <Link to={"/thrifts"}>
+              <div className="mr-4 text-[14px] lg:block md:block sm:hidden">
+                <h3>THRIFT</h3>
+              </div>
+            </Link>
           </div>
           <div>
             <div className="mr-14 text-[13.5px] lg:block md:block sm:hidden">
-              <h3>BRANDS CURATED BY MARS</h3>
+              <Link to={"/marsbrands"}>
+                <h3>BRANDS CURATED BY MARS</h3>
+              </Link>
             </div>
           </div>
         </div>
@@ -81,17 +94,19 @@ function NavBar() {
       <div
         className={
           Sidebar
-            ? "w-80 h-[100vh] bg-white flex justify-center fixed top-0 transition duration-300 ease-in scroll-auto z-10"
-            : "translate-x-[-100%] transition ease-out duration-300 "
+            ? "w-full h-screen bg-white flex justify-center fixed top-0 mt-16 transition-transform duration-300 ease-in-out z-10 overflow-y-hidden"
+            : "transition-transform duration-300 ease-out transform -translate-x-full fixed top-0 mt-16"
         }
       >
         <div className={Sidebar ? "w-[100%] cursor-pointer" : "hidden"}>
-          <div className="NavIcon mt-4 ml-5 cursor-pointer">
-            <BsX size={45} onClick={showSidebar} />
-          </div>
-
           {SidebarData.map((item, index) => {
-            return <SubMenu item={item} key={index} />;
+            return (
+              <SubMenu
+                item={item}
+                key={index}
+                handleLinkClick={handleLinkClick}
+              />
+            );
           })}
 
           <div>
