@@ -32,7 +32,7 @@ const settings = {
 function CollectionsSlider() {
   return (
     <div className="relative cursor-pointer">
-      <div className="w-full lg:h-[690px] md:h-[500px] sm:h-[65vh] overflow-hidden">
+      <div className="w-full lg:h-[690px] md:h-[500px] sm:h-full overflow-hidden">
         <Slider {...settings} className="">
           {image.map((ima, index) => (
             <div key={index} className="h-full">
