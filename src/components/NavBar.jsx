@@ -84,7 +84,7 @@ function NavBar() {
           </div>
         </div>
 
-        <div className="bg-black text-white h-8 text-[12px] flex justify-center items-center font-second sm:fixed sm:top-0 sm:w-full lg:hidden md:hidden">
+        <div className="bg-black text-white h-8 text-[12px] flex justify-center items-center font-second sm:fixed sm:top-0 sm:w-full z-40 lg:hidden md:hidden">
           <Fade left>
             <h3>27 MINS AWAY TILL NEW THRIFT DROP !</h3>
           </Fade>
@@ -101,7 +101,7 @@ function NavBar() {
         <div
           className={
             Sidebar
-              ? "w-[100%] cursor-pointer lg:mt-0 md:mt-0 sm:mt-32"
+              ? "w-[100%] cursor-pointer lg:mt-0 md:mt-0 sm:mt-40"
               : "hidden"
           }
         >
@@ -120,7 +120,7 @@ function NavBar() {
               <input
                 type="text"
                 placeholder="Search our store..."
-                className="lg:w-[55vw] md:w-[65vw] sm:w-[75vw] h-11 outline-none font-second text-sm ml-3"
+                className="lg:w-[55vw] md:w-[65vw] sm:w-[75vw] h-11 outline-none font-second text-base sm:text-[16px] ml-3"
               />
               <button className="mr-5">
                 <IoSearchOutline size={23} className="" />

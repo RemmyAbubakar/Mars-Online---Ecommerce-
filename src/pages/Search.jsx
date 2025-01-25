@@ -14,7 +14,7 @@ function Search() {
           <input
             type="text"
             placeholder="Search our store..."
-            className="lg:w-[55vw] md:w-[55vw] sm:w-full h-11 outline-none font-second text-sm ml-3"
+            className="lg:w-[55vw] md:w-[55vw] sm:w-full sm:text-[16px] h-11 outline-none font-second text-sm ml-3"
           />
           <button className="mr-5">
             <IoSearchOutline size={23} className="" />
