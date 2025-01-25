@@ -101,7 +101,7 @@ function NavBar() {
         <div
           className={
             Sidebar
-              ? "w-[100%] cursor-pointer lg:mt-0 md:mt-0 sm:mt-20"
+              ? "w-[100%] cursor-pointer lg:mt-0 md:mt-0 sm:mt-32"
               : "hidden"
           }
         >
