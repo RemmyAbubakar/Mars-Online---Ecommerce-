@@ -3,19 +3,13 @@ import Slider from "react-slick";
 
 const image = [
   {
-    img: "https://res.cloudinary.com/remmybello123/image/upload/v1735851348/boygirl4_1_o7yzgh.jpg",
-  },
-  {
-    img: "https://res.cloudinary.com/remmybello123/image/upload/v1735851346/boygirl3_1_hcv7rl.jpg",
-  },
-  {
-    img: "https://res.cloudinary.com/remmybello123/image/upload/v1735851346/boygirl1_1_ulozvc.jpg",
+    img: "https://res.cloudinary.com/remmybello123/image/upload/v1735851356/man3_1_siysku.jpg",
   },
   {
     img: "https://res.cloudinary.com/remmybello123/image/upload/v1735851352/esther5_1_q9i5eb.jpg",
   },
   {
-    img: "https://res.cloudinary.com/remmybello123/image/upload/v1735851356/man3_1_siysku.jpg",
+    img: "https://res.cloudinary.com/remmybello123/image/upload/v1735851348/boygirl4_1_o7yzgh.jpg",
   },
 ];
 
@@ -32,7 +26,7 @@ const settings = {
 function CollectionsSlider() {
   return (
     <div className="relative cursor-pointer">
-      <div className="w-full lg:h-[690px] md:h-[500px] sm:h-[65vh] overflow-hidden">
+      <div className="w-full lg:h-[690px] md:h-[500px] sm:h-full overflow-hidden">
         <Slider {...settings} className="">
           {image.map((ima, index) => (
             <div key={index} className="h-full">
