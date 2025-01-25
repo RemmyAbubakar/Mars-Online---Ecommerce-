@@ -22,6 +22,8 @@ module.exports = {
     fontFamily: {
       abc: ["Roboto Flex", "sans-serif"],
       second: ["Urbanist", "sans-serif"],
+      rem: ["News Cycle", "serif"],
+      sul: ["M PLUS Rounded 1c", "serif"],
     },
   },
   plugins: [],

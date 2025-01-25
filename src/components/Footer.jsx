@@ -7,7 +7,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="p-4 bg-[#ffffff] sm:p-6 font-second">
+    <footer className="p-4 bg-[#ffffff] sm:p-6 sm:pb-20 md:pb-0 lg:pb-5  font-second">
       <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
       <div className="md:flex md:justify-between border-black">
         <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
@@ -16,13 +16,13 @@ function Footer() {
               Info
             </h2>
             <ul className="text-gray-600 dark:text-gray-900">
-              <li className="mb-4">
+              <li className="mb-4 whitespace-nowrap">
                 <Link to={"/contacts"}>Contact Us</Link>
               </li>
-              <li className="mb-4">Shipping</li>
-              <li className="mb-4">FAQ</li>
-              <li className="mb-4">Return Policy</li>
-              <li className="mb-4">Privacy Policy</li>
+              <li className="mb-4 whitespace-nowrap">Shipping</li>
+              <li className="mb-4 whitespace-nowrap">FAQ</li>
+              <li className="mb-4 whitespace-nowrap">Return Policy</li>
+              <li className="mb-4 whitespace-nowrap">Privacy Policy</li>
             </ul>
           </div>
         </div>
@@ -78,7 +78,7 @@ function Footer() {
         <img src="./images/lll.png" />
       </div>
       <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-      <div className="flex items-center justify-center sm:flex sm:items-center sm:justify-center md:flex md:items-center md:justify-center">
+      <div className="flex items-center justify-center sm:flex sm:items-center sm:justify-center md:flex md:items-center md:justify-center md:pb-10 lg:pb-3">
         <span className="text-sm text-gray-500 sm:text-center dark:text-gray-900">
           © 2022{" "}
           <a href="https://flowbite.com/" className="hover:underline">

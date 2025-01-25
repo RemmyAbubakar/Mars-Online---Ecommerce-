@@ -9,7 +9,7 @@ import Fade from "react-reveal/Fade";
 
 function Home() {
   return (
-    <div>
+    <div className="">
       <Categories />
       <HeadForProducts />
       <Cards />

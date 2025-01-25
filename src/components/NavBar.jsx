@@ -21,7 +21,7 @@ function NavBar() {
   const handleLinkClick = () => setSidebar(false); // Function to close sidebar when link is clicked
 
   return (
-    <div className="py-0 sticky top-0 z-50 bg-white">
+    <div className="lg:sticky lg:top-0 md:sticky md:top-0 sm:fixed sm:bottom-0 sm:left-0 sm:right-0 z-50 bg-white">
       <nav>
         <div className="flex justify-between items-center py-2 px-4">
           <div className="">
@@ -39,9 +39,9 @@ function NavBar() {
             <Fade bottom>
               <Link to="/">
                 <img
-                  src="./images/marsss transparent.png"
+                  src="./images/Mars-retail logo 1.png"
                   alt=""
-                  className="ml-6 h-12 w-32 py-1"
+                  className="ml-6 h- w-32 py-1"
                 />
               </Link>
             </Fade>
@@ -49,13 +49,13 @@ function NavBar() {
           <div className="">
             <ul className="flex gap-3">
               <li>
-                <Link to="/search">
+                <Link to="/search" onClick={handleLinkClick}>
                   <IoSearchOutline size={27} />
                 </Link>
               </li>
 
               <li>
-                <Link to="/cart">
+                <Link to="/cart" onClick={handleLinkClick}>
                   <IoBagOutline size={27} color="black" />
                 </Link>
               </li>
@@ -84,7 +84,7 @@ function NavBar() {
           </div>
         </div>
 
-        <div className="bg-[black] text-white h-8 text-[12px] flex justify-center items-center font-second lg:hidden md:hidden sm:flex sm:justify-center sm:items-center">
+        <div className="bg-black text-white h-8 text-[12px] flex justify-center items-center font-second sm:fixed sm:top-0 sm:w-full lg:hidden md:hidden">
           <Fade left>
             <h3>27 MINS AWAY TILL NEW THRIFT DROP !</h3>
           </Fade>
@@ -94,11 +94,17 @@ function NavBar() {
       <div
         className={
           Sidebar
-            ? "w-full h-screen bg-white flex justify-center fixed top-0 mt-16 transition-transform duration-300 ease-in-out z-10 overflow-y-hidden"
-            : "transition-transform duration-300 ease-out transform -translate-x-full fixed top-0 mt-16"
+            ? "w-full h-screen bg-white flex justify-center fixed lg:top-0 md:top-0 sm:bottom-0 lg:mt-16 md:mt-16 sm:mb-14 transition-transform duration-300 ease-in-out z-10 overflow-y-hidden"
+            : "transition-transform duration-300 ease-out transform -translate-x-full fixed"
         }
       >
-        <div className={Sidebar ? "w-[100%] cursor-pointer" : "hidden"}>
+        <div
+          className={
+            Sidebar
+              ? "w-[100%] cursor-pointer lg:mt-0 md:mt-0 sm:mt-20"
+              : "hidden"
+          }
+        >
           {SidebarData.map((item, index) => {
             return (
               <SubMenu
@@ -109,14 +115,14 @@ function NavBar() {
             );
           })}
 
-          <div>
-            <div className="flex justify-center mt-11 border outline-none w-[89%] mx-auto">
+          <div className="flex ml-5 sm:mr-5">
+            <div className="flex justify-center mt-10 border rounded-md outline-none lg:w-[55vw] md:w-[55vw] sm:w-full">
               <input
                 type="text"
                 placeholder="Search our store..."
-                className="w-[55vw] h-11 outline-none font-second text-sm ml-3"
+                className="lg:w-[55vw] md:w-[65vw] sm:w-[75vw] h-11 outline-none font-second text-sm ml-3"
               />
-              <button className="mr-1">
+              <button className="mr-5">
                 <IoSearchOutline size={23} className="" />
               </button>
             </div>

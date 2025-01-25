@@ -1,34 +1,42 @@
 export const ImagesData = [
   {
-    title: "BLANK HEAVYWEIGHT TEE - BEIGE",
-    image: "/images/esther1 (1).jpg",
+    title: "Blank Heavyweight Tee - Beige",
+    image:
+      "https://res.cloudinary.com/remmybello123/image/upload/v1735850973/esther_remove_bg_1_nwzhgz.png",
   },
   {
-    title: "BLANK HEAVYWEIGHT TEE - WHITE",
-    image: "/images/man1 (1).jpg",
+    title: "Blank Heavyweight Tee - White",
+    image:
+      "https://res.cloudinary.com/remmybello123/image/upload/v1735850972/man_remove_bg_1_frljez.png",
   },
   {
-    title: "BLANK HEAVYWEIGHT TEE - PURPLE",
-    image: "/images/esther3 (1).jpg",
+    title: "Blank Heavyweight Tee - Purple",
+    image:
+      "https://res.cloudinary.com/remmybello123/image/upload/v1735850971/esther_remove_bg_3_m3sw6q.png",
   },
   {
-    title: "BLANK HEAVYWEIGHT TEE - BEIGE",
-    image: "/images/man4 (1).jpg",
+    title: "Blank Heavyweight Tee - Beige",
+    image:
+      "https://res.cloudinary.com/remmybello123/image/upload/v1735850970/man_remove_bg_4_ioefmp.png",
   },
   {
-    title: "BLANK HEAVYWEIGHT TEE - BLACK",
-    image: "/images/man2 (1).jpg",
+    title: "Blank Heavyweight Tee - Black",
+    image:
+      "https://res.cloudinary.com/remmybello123/image/upload/v1735850969/man_remove_bg_2_hceqhn.png",
   },
   {
-    title: "BLANK HEAVYWEIGHT TEE - PURPLE",
-    image: "/images/esther4 (1).jpg",
+    title: "Blank Heavyweight Tee - Purple",
+    image:
+      "https://res.cloudinary.com/remmybello123/image/upload/v1735850969/esther_remove_bg_2_djhvqn.png",
   },
   {
-    title: "BLANK HEAVYWEIGHT TEE - PURPLE",
-    image: "/images/esther2 (1).jpg",
+    title: "Blank Heavyweight Tee - Purple",
+    image:
+      "https://res.cloudinary.com/remmybello123/image/upload/v1735850969/esther_remove_bg_4_mtrueq.png",
   },
   {
-    title: "BLANK HEAVYWEIGHT TEE - PURPLE",
-    image: "/images/esther5 (1).jpg",
+    title: "Blank Heavyweight Tee - Purple",
+    image:
+      "https://res.cloudinary.com/remmybello123/image/upload/v1735850972/man_remove_bg_1_frljez.png",
   },
 ];

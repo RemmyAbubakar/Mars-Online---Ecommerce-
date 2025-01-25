@@ -3,19 +3,19 @@ import Slider from "react-slick";
 
 const image = [
   {
-    img: "/images/esther1 (1).jpg",
+    img: "https://res.cloudinary.com/remmybello123/image/upload/v1735851348/boygirl4_1_o7yzgh.jpg",
   },
   {
-    img: "/images/boygirl6 (1).jpg",
+    img: "https://res.cloudinary.com/remmybello123/image/upload/v1735851346/boygirl3_1_hcv7rl.jpg",
   },
   {
-    img: "/images/man2 (1).jpg",
+    img: "https://res.cloudinary.com/remmybello123/image/upload/v1735851346/boygirl1_1_ulozvc.jpg",
   },
   {
-    img: "/images/man4 (1).jpg",
+    img: "https://res.cloudinary.com/remmybello123/image/upload/v1735851352/esther5_1_q9i5eb.jpg",
   },
   {
-    img: "/images/esther4 (1).jpg",
+    img: "https://res.cloudinary.com/remmybello123/image/upload/v1735851356/man3_1_siysku.jpg",
   },
 ];
 
@@ -32,8 +32,8 @@ const settings = {
 function CollectionsSlider() {
   return (
     <div className="relative cursor-pointer">
-      <div className="w-full lg:h-[690px] md:h-[560px] sm:h-[570px] overflow-hidden">
-        <Slider {...settings} className="w-full h-full">
+      <div className="w-full lg:h-[690px] md:h-[500px] sm:h-[65vh] overflow-hidden">
+        <Slider {...settings} className="">
           {image.map((ima, index) => (
             <div key={index} className="h-full">
               <img src={ima.img} className="w-full h-full object-cover" />
@@ -42,7 +42,7 @@ function CollectionsSlider() {
         </Slider>
       </div>
       <div className="absolute bottom-0 left-0 ml-5 mb-12">
-        <div className="font-second font-bold text-white text-2xl">
+        <div className="font-second font-bold text-white text-2xl lg:block md:block sm:hidden">
           COLLECTIONS
         </div>
       </div>

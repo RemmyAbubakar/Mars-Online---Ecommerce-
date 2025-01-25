@@ -15,7 +15,7 @@ function SubMenu({ item, handleLinkClick }) {
   return (
     <div>
       <div
-        className="sidebarLink flex text-[black] justify-between items-center p-4 list-none h-14 font-second text-sm font-normal border-b mx-5"
+        className="sidebarLink flex text-[black] justify-between items-center p-4 list-none font-second text-sm font-normal border-b mx-5"
         to={item.path}
         onClick={handleClick}
       >

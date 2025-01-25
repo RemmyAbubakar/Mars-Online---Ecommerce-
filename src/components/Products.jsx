@@ -11,14 +11,15 @@ function Products({ product }) {
           alt="product image"
         />
       </a>
-      <div className="sm:px-4 px-8 ">
+
+      <div className="sm:px-4 px-8 mt-2">
         <a href="#">
-          <h5 className="sm:text-md md:text-lg  lg:text-lg  font-light tracking-normal dark:text-[black] ">
-            BLANK HEAVYWEIGHT TEE - WHITE
+          <h5 className="sm:text-md md:text-lg lg:text-lg font-rem tracking-wider text-gray-600 font-medium">
+            Blank Heavyweight Tee - Purple
           </h5>
         </a>
-        <div className="">
-          <div className="sm:text-md md:text-lg lg:text-lg  font-second text-gray-900 dark:black">
+        <div className="mt-2">
+          <div className="sm:text-md md:text-lg lg:text-lg font-rem text-gray-900 dark:black">
             ₵ {product.price}
           </div>
         </div>

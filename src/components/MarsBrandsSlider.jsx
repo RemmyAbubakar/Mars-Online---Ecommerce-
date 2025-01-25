@@ -3,19 +3,19 @@ import Slider from "react-slick";
 
 const image = [
   {
-    img: "/images/esther2 (1).jpg",
+    img: "https://res.cloudinary.com/remmybello123/image/upload/v1735851346/boygirl3_1_hcv7rl.jpg",
   },
   {
-    img: "/images/man3 (1).jpg",
+    img: "https://res.cloudinary.com/remmybello123/image/upload/v1735851625/esther3_1_xv8j1g.jpg",
   },
   {
-    img: "/images/esther5 (1).jpg",
+    img: "https://res.cloudinary.com/remmybello123/image/upload/v1735851345/boygirl_1_tndhig.jpg",
   },
   {
-    img: "/images/boygirl3 (1).jpg",
+    img: "https://res.cloudinary.com/remmybello123/image/upload/v1735851352/esther5_1_q9i5eb.jpg",
   },
   {
-    img: "/images/boygirl (1).jpg",
+    img: "https://res.cloudinary.com/remmybello123/image/upload/v1735851358/man4_1_nmjced.jpg",
   },
 ];
 
@@ -31,8 +31,8 @@ const settings = {
 
 function MarsBrandsSlider() {
   return (
-    <div className="relative cursor-pointer">
-      <div className="w-full lg:h-[690px] md:h-[560px] sm:h-[570px] overflow-hidden">
+    <div className="relative cursor-pointer lg:block md:hidden sm:hidden">
+      <div className="w-full lg:h-[690px] md:h-[560px] sm:h-full overflow-hidden">
         <Slider {...settings} className="w-full h-full">
           {image.map((ima, index) => (
             <div key={index} className="h-full">

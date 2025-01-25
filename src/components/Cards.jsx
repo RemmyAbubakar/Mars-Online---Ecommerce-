@@ -3,7 +3,7 @@ import { ImagesData } from "./ImagesData";
 
 function Cards() {
   return (
-    <div className=" font-second grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 justify-center lg:px-24 md:px-16 sm:px-1">
+    <div className="font-rem font-medium grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 justify-center lg:px-12 md:px-10 sm:px-1 mb-5">
       {ImagesData.map((item, index) => (
         <div className=" bg-white" key={index}>
           <a href="#">
@@ -13,14 +13,14 @@ function Cards() {
               alt="product image"
             />
           </a>
-          <div className="sm:px-4 px-8 ">
+          <div className="sm:px-4 px-8">
             <a href="#">
-              <h5 className="sm:text-md md:text-lg  lg:text-lg  font-normal tracking-normal dark:text-[black] ">
+              <h5 className="sm:text-md md:text-lg lg:text-lg tracking-wider text-gray-600 flex justify-center">
                 {item.title}
               </h5>
             </a>
-            <div className="">
-              <div className="sm:text-md md:text-lg lg:text-lg  font-second text-gray-900 dark:black">
+            <div className="mt-2">
+              <div className="sm:text-md md:text-lg lg:text-md dark:black lg:ml-9 md:ml-9 ">
                 ₵185
               </div>
             </div>

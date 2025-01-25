@@ -19,23 +19,23 @@ export const SidebarData = [
         path: "/Shop/shop all",
       },
       {
-        title: "T-Shirts",
+        title: "Blank Tee 260 GSM",
         path: "/shop/t-shirts",
       },
       {
-        title: "Hoodies",
+        title: "Blank Tee 400 GSM",
         path: "/shop/hoodie",
       },
       {
-        title: "Bottoms",
+        title: "Crop Tee",
         path: "/shop/bottoms",
       },
       {
-        title: "Hats",
+        title: "Navel Tee",
         path: "/shop/hats",
       },
       {
-        title: "Accessories",
+        title: "Socks",
         path: "/shop/accessories",
       },
     ],
